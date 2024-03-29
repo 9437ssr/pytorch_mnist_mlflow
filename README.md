@@ -22,6 +22,8 @@
     9. "mlflow_serving.yaml" file configurations were applied 
     10. A LoadBalancer service was created with 8080 port number exposed
     11. "invoke_endpoint.ipynb" notebook was used to test deployed application successfully 
+![image](https://github.com/9437ssr/pytorch_mnist_mlflow/assets/22223702/58ed40dc-a1d1-4557-9236-68bfdee93da6)
+
 
 
 
