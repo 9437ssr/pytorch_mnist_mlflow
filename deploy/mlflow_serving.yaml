@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlflow-serving
+  labels:
+    app: mlflow-serving
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mlflow-serving
+  template:
+    metadata:
+      labels:
+        app: mlflow-serving
+    spec:
+      containers:
+      - name: mlflow-serving
+        image: us-central1-docker.pkg.dev/mlflowonkubernetes/mlflow/inference:v1
+        ports:
+        - containerPort: 8080
